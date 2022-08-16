@@ -1,4 +1,5 @@
 import time
+import matplotlib.pyplot as plt
 desenho = str("="*30)
 
 print(desenho)
@@ -63,6 +64,14 @@ while True:
                 # print(contador, quantidade[0], quantidade[1],quantidade[2],quantidade[3], quantidade[4], quantidade[contador])
 
                 contador+=1
+
+                if contador == 4:
+                    time.sleep(2)
+                    print("Agora vamos para os gráficos")
+                    plt.plot(tipo, quantidade)
+                    plt.show()
+
+                
                 
             exit()
         elif finalizar == "2":
