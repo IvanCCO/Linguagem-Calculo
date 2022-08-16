@@ -1,10 +1,15 @@
 import time
-import matplotlib.pyplot as plt
-desenho = str("="*30)
 
-print(desenho)
+def comboDraw():
+    linha = str("="*40)
+    desenho = str("twitch.tv/Lullyfito  "*2)
+    print(linha)
+    print(desenho)
+    print(linha)
+
+
 print("Programa para Calcular o IMC")
-print(desenho)
+
 
 tipo = ["Abaixo do Peso", "Normal", "Sobrepeso", "Obeso", "Mórbido"]
 quantidade = [0,0,0,0,0]
@@ -14,25 +19,24 @@ while True:
 
     while True:
         print("\n")
+        comboDraw()
         peso=float(input('Quanto você pesa em Kg? (kg) \n'))
         altura=float(input('Quanto você mede em altura? (m) \n'))
         IMC = peso/(altura**2)
         
         if(peso <= 0 or altura <= 0):
-            print(desenho)
+            
+            comboDraw()
             print("Peso ou altura menor que 0")
-            print(desenho)
+            
     
         else:
             total += 1
             break
             
-    
-    
-
-    print(desenho) 
+     
     print("Seu IMC é de {:.2f}".format(IMC))
-    print(desenho)
+    
 
     if IMC < 18.5:
         quantidade[0]+=1;
@@ -54,12 +58,12 @@ while True:
         if(finalizar == "1"):
             
             contador = 0;
-            print(desenho)
+            
             print("Total de Pessoas entrevistadas: ", total)
 
             for i in tipo:
                 time.sleep(1)
-                print(desenho)
+                comboDraw()
                 print("Diagnóstico:", i, "\nQuantidade:", quantidade[contador])
                 # print(contador, quantidade[0], quantidade[1],quantidade[2],quantidade[3], quantidade[4], quantidade[contador])
 
@@ -67,13 +71,10 @@ while True:
 
                 if contador == 4:
                     time.sleep(2)
-                    print("Agora vamos para os gráficos")
-                    plt.plot(tipo, quantidade)
-                    plt.show()
+                    print("\nPrograma finalizado. Obrigado por usar.")
+                    comboDraw()
+                    exit()
 
-                
-                
-            exit()
         elif finalizar == "2":
             break
         else:
