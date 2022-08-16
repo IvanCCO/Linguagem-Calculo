@@ -6,7 +6,8 @@ print("Programa para Calcular o IMC")
 print(desenho)
 
 tipo = ["Abaixo do Peso", "Normal", "Sobrepeso", "Obeso", "Mórbido"]
-quantidade = [0,1,2,3,4]
+quantidade = [0,0,0,0,0]
+total =0
 
 while True:
 
@@ -22,7 +23,9 @@ while True:
             print(desenho)
     
         else:
+            total += 1
             break
+            
     
     
 
@@ -31,15 +34,15 @@ while True:
     print(desenho)
 
     if IMC < 18.5:
-        quantidade[0] += 1
+        quantidade[0]+=1;
     elif IMC >=18.5 and IMC <25:
         quantidade[1] +=1
     elif IMC >=25 and IMC <30:
-        quantidade[2] += 1
+        quantidade[2]+=1;
     elif IMC >=30 and IMC <40:
-        quantidade[3] += 1
+        quantidade[3]+=1;
     else:
-        quantidade[4] += 1
+        quantidade[4]+=1;
 
     while True:
         print("\n Deseja finalizar o programa?")
@@ -48,14 +51,18 @@ while True:
         finalizar = str(input())
 
         if(finalizar == "1"):
-
+            
             contador = 0;
+            print(desenho)
+            print("Total de Pessoas entrevistadas: ", total)
 
             for i in tipo:
-
+                time.sleep(1)
+                print(desenho)
                 print("Diagnóstico:", i, "\nQuantidade:", quantidade[contador])
+                # print(contador, quantidade[0], quantidade[1],quantidade[2],quantidade[3], quantidade[4], quantidade[contador])
 
-                ++contador
+                contador+=1
                 
             exit()
         elif finalizar == "2":
