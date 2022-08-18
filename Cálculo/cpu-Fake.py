@@ -86,11 +86,11 @@ while True:
         resposta = int(input("Selecione o que deseja \n"))
 
         if resposta == 1:
-            print(core)
+            print("\nNo seu computador tem um total de ", core)
         elif resposta == 2:
-            print(thread)
+            print("\nNo seu computador tem um total de ", thread)
         elif resposta == 3:
-            print(disco)
+            print("\nNo seu computador tem um total de ", disco)
         elif resposta == 4:
             print("dfuiebh")
         elif resposta == 5:
