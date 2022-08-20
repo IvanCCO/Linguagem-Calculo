@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quem é minha pinpeta?</h1>
+
+    <input type="text" id="ipt_nene" placeholder="Quem é?">
+    <button onclick="nene()">Verificar</button>
+    <br>
+    <span id="msg"></span>
+    <img src="ok.jpg" alt="" id="foto" style="display: none;">
+</body>
+</html>
+
+
+<script>
+
+    function nene(){
+
+        ppta = ipt_nene.value;
+
+        if(ppta.toUpperCase() == "EU"){
+            msg.innerHTML = "É você nene";
+            foto.style.display = "block";
+        }else{
+            msg.innerHTML = '';
+            
+            for(var i=0; i<100; i++)
+            {
+                msg.innerHTML += "Não, vc é a pinpeta <br>"
+            }
+        }
+    }
+</script>
