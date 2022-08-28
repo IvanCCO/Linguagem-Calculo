@@ -19,7 +19,7 @@ public class ClassesSociais {
         
         String classe = conta.classe(salariosMinimos);
         
-        System.out.println(classe);
+        System.out.println("Sua classe é " + classe);
         
     }
 }
