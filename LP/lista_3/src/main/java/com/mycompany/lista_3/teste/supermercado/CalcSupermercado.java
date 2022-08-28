@@ -26,13 +26,12 @@ public class CalcSupermercado {
         
     String exibirNotaFiscal(Double valor, Integer qtd, Double total){
         
-        String linha = "-".repeat(20);
+        String linha = "-".repeat(50);
         
-        String frase = String.format("Bem-vindo ao Sistema de desconto progressivo\n "
-                    + "Digite o valor unitário do produto: \n %.2f \n Digite a quantidade: %d \n" + linha +
-                "Valor do produto: %.2f \n ", args)
+        String frase = String.format( "%s\nValor do produto: R$%.2f \nQuantidade: %d \n%s\n"
+                + "Valor com desconto: R$%.2f \n ", linha, valor, qtd, linha, total);
         
-        return "dime";
+        return frase;
     }
 }
     
