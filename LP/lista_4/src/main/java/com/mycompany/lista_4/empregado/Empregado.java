@@ -55,7 +55,7 @@ public final class Empregado {
         
         porcReajuste /= 100;
         
-        return (this.salario * porcReajuste);
+        return (this.salario * porcReajuste) + this.salario;
         
     }
 }
