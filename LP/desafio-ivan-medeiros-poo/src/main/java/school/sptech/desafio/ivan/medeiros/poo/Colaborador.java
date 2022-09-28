@@ -6,6 +6,17 @@ public class Colaborador {
     private String nome,cargo;
     private Double salario;
 
+    public Colaborador(String nome, String cargo, Double salario) {
+        this.nome = nome;
+        this.cargo = cargo;
+        this.salario = salario;
+    }
+    
+    public String toString(){
+        
+        return "nome: " + this.nome + "\ncargo: " + this.cargo + "\nsalario: " + this.salario;
+    }
+
     public String getNome() {
         return nome;
     }

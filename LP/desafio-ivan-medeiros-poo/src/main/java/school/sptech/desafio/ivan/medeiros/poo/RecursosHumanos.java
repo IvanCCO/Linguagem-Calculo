@@ -4,40 +4,36 @@ public class RecursosHumanos {
     
     private Integer quantidadePromovidos=0, quantidadeReajustes=0;
     
-    Colaborador colaborador = new Colaborador();
-    
-    
-    public Double reajustarSalario(String nome, Double porcentagem){
-        
-       if (porcentagem >= 0 && (nome != null && porcentagem != null)){
-//       nome = colaborador.getNome();
-       Double salario = colaborador.getSalario();
-       porcentagem /= 100;
-       salario +=(salario * porcentagem);
-       
-       colaborador.setSalario(salario);
-       this.quantidadeReajustes += 1;
-       }
-       return colaborador.getSalario();  
-    }
-    
-    public Double promoverColaborador(String nomeColaborador, String novoCargo, Double novoSalario){
-        
-       if(validarPromocao(novoCargo, novoSalario)){
 
-           this.quantidadePromovidos += 1;
-       }
+    public Double reajustarSalario(Colaborador pessoa, Double porcentagem){
         
-        return 0.0;
+      Double salario  = pessoa.getSalario();
+      porcentagem /= 100;
+      salario = salario + (salario * porcentagem);
+      
+      pessoa.setSalario(salario);
+        
+      return salario;
+    } 
+    
+    public Double promoverColaborador(Colaborador pessoa, String novoCargo, Double novoSalario){
+        
+        pessoa.setCargo(novoCargo);
+        if(validarSalario(pessoa, novoSalario)){
+            
+            pessoa.setSalario(novoSalario);
+        }
+        
+        return novoSalario;
     }
     
-    public Boolean validarPromocao(String novoCargo, Double novoSalario){
+    public Boolean validarSalario(Colaborador pessoa, Double novoSalario){
         
-        Double salarioAntigo = colaborador.getSalario();
-        
-        return colaborador != null && novoCargo != null && novoSalario != null && novoSalario > salarioAntigo;
-        
+        Double salarioAntigo = pessoa.getSalario();
+     
+        return novoSalario > salarioAntigo;
     }
-} 
+    
+}
 
 

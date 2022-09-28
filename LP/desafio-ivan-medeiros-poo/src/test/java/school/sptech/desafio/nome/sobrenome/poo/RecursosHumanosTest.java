@@ -24,7 +24,7 @@ class RecursosHumanosTest {
   @DisplayName("promoverColaborador() - quando acionado com valor inválido (salário - nulo), não deverá alterar cargo e salário")
   void promoverColaboradorComSalarioNulo() {
 
-    Colaborador colaborador = new Colaborador("Diego Brito", "Dev jr", 1_000.0);
+        Colaborador colaborador = new Colaborador("Diego Brito", "Dev jr", 1_000.0);
 
     RecursosHumanos rh = new RecursosHumanos();
 
