@@ -13,7 +13,7 @@ public class App {
          
         System.out.println(col.toString());
         
-        rh.promoverColaborador(col, "Dev Pleno", 1120.0);
+        rh.promoverColaborador(col, "Dev Pleno", 1720.0);
         
         System.out.println(col.toString());
     }

@@ -1,77 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.057" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.068" tests="13" errors="13" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="jdk.extensions.version" value="11.0.11.0"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/test-classes:/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/classes:/home/diego/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/diego/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/diego/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/diego/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/diego/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/diego/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/diego/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.class.path" value="/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/test-classes:/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/classes:/home/aluno/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/aluno/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/aluno/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/aluno/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/aluno/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/aluno/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/aluno/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse OpenJ9"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="com.ibm.oti.vm.library.version" value="29"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
     <property name="user.timezone" value=""/>
-    <property name="user.country.format" value="BR"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="os.name" value="Linux"/>
-    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/home/diego/.dvm/lang/java/current/lib"/>
-    <property name="sun.java.command" value="/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/surefire/surefirebooter3868977150736873037.jar /home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/surefire 2022-09-23T23-31-35_729-jvmRun1 surefire11415767818651358598tmp surefire_017658820833996991tmp"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/test-classes:/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/classes:/home/diego/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/diego/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/diego/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/diego/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/diego/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/diego/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/diego/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib/default:/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib"/>
+    <property name="sun.java.command" value="/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/surefire/surefirebooter5670860268521424936.jar /home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/surefire 2022-09-28T11-03-54_258-jvmRun1 surefire16319367003576924166tmp surefire_011438583130198879608tmp"/>
+    <property name="surefire.test.class.path" value="/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/test-classes:/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/classes:/home/aluno/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/aluno/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/aluno/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/aluno/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/aluno/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/aluno/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/aluno/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/diego"/>
-    <property name="user.language" value="en"/>
+    <property name="user.home" value="/home/aluno"/>
+    <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2020-10-20"/>
-    <property name="java.home" value="/home/diego/.dvm/lang/java/current"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="jdk.extensions.name" value="Extensions for OpenJDK for Eclipse OpenJ9"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.compiler" value="j9jit29"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="sun.java.launcher.pid" value="8647"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo/target/surefire/surefirebooter3868977150736873037.jar"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.9+7-LTS"/>
-    <property name="user.name" value="diego"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="java.awt.fonts" value=""/>
+    <property name="surefire.real.class.path" value="/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo/target/surefire/surefirebooter5670860268521424936.jar"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib/default:/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.fullversion" value="11.0.11+9&#10;JRE 11 Linux amd64-64-Bit Compressed References 20210421_975 (JIT enabled, AOT enabled)&#10;OpenJ9   - b4cc246d9&#10;OMR      - 162e6f729&#10;JCL      - 7796c80419 based on jdk-11.0.11+9"/>
+    <property name="java.runtime.version" value="11.0.11+9"/>
+    <property name="user.name" value="aluno"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.15.0-48-generic"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="os.version" value="5.13.0-25-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="18.9"/>
-    <property name="maven.ext.class.path" value="/home/diego/softwares/netbeans-12.0/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
-    <property name="localRepository" value="/home/diego/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.vm.name" value="Eclipse OpenJ9 VM"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="maven.ext.class.path" value="/opt/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/aluno/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
     <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="11.0.9"/>
-    <property name="user.dir" value="/home/diego/NetBeansProjects/desafio-nome-sobrenome-poo"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="com.ibm.system.agent.path" value="/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib"/>
+    <property name="user.dir" value="/home/aluno/Documents/Linguagem-Calculo/LP/desafio-ivan-medeiros-poo"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="user.language.format" value="pt"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vm.version" value="11.0.9+7-LTS"/>
+    <property name="os.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib/default:/home/aluno/.sdkman/candidates/java/11.0.11.j9-adpt/lib:/usr/lib64:/usr/lib"/>
+    <property name="java.vm.info" value="JRE 11 Linux amd64-64-Bit Compressed References 20210421_975 (JIT enabled, AOT enabled)&#10;OpenJ9   - b4cc246d9&#10;OMR      - 162e6f729&#10;JCL      - 7796c80419 based on jdk-11.0.11+9"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="openj9-0.26.0"/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="ibm.system.encoding" value="UTF-8"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="reajustarSalarioComValorValido" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.023"/>
-  <testcase name="reajustarSalarioComValorZerado" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0"/>
-  <testcase name="reajustarSalarioComValorNegativo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002"/>
-  <testcase name="promoverColaboradorComValoresInvalidos" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001"/>
-  <testcase name="reajustarSalarioComPorcentagemNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002"/>
-  <testcase name="promoverColaboradorComValoresValidos" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002"/>
-  <testcase name="promoverColaboradorComColaboradorNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002"/>
-  <testcase name="promoverColaboradorComSalarioNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001"/>
-  <testcase name="getQuantidadeReajusteNaoDeveSofrerAlteracoes" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001"/>
-  <testcase name="getQuantidadeReajusteInicialmente" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001"/>
-  <testcase name="getQuantidadePromovidosInicialmente" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002"/>
-  <testcase name="reajustarSalarioComColaboradorNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002"/>
-  <testcase name="promoverColaboradorComCargoNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001"/>
+  <testcase name="reajustarSalarioComValorValido" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.027">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComValorValido(RecursosHumanosTest.java:135)
+</error>
+  </testcase>
+  <testcase name="reajustarSalarioComValorZerado" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComValorZerado(RecursosHumanosTest.java:120)
+</error>
+  </testcase>
+  <testcase name="reajustarSalarioComValorNegativo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComValorNegativo(RecursosHumanosTest.java:105)
+</error>
+  </testcase>
+  <testcase name="promoverColaboradorComValoresInvalidos" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.004">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComValoresInvalidos(RecursosHumanosTest.java:55)
+</error>
+  </testcase>
+  <testcase name="reajustarSalarioComPorcentagemNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.003">
+    <error message="Uncompilable source code - Erroneous tree type: RecursosHumanos" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComPorcentagemNulo(RecursosHumanosTest.java:85)
+</error>
+  </testcase>
+  <testcase name="promoverColaboradorComValoresValidos" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.003">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComValoresValidos(RecursosHumanosTest.java:69)
+</error>
+  </testcase>
+  <testcase name="promoverColaboradorComColaboradorNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002">
+    <error message="Uncompilable source code - Erroneous tree type: RecursosHumanos" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComColaboradorNulo(RecursosHumanosTest.java:18)
+</error>
+  </testcase>
+  <testcase name="promoverColaboradorComSalarioNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComSalarioNulo(RecursosHumanosTest.java:27)
+</error>
+  </testcase>
+  <testcase name="getQuantidadeReajusteNaoDeveSofrerAlteracoes" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.003">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.getQuantidadeReajusteNaoDeveSofrerAlteracoes(RecursosHumanosTest.java:150)
+</error>
+  </testcase>
+  <testcase name="getQuantidadeReajusteInicialmente" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001">
+    <error message="Uncompilable source code - Erroneous tree type: RecursosHumanos" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.getQuantidadeReajusteInicialmente(RecursosHumanosTest.java:172)
+</error>
+  </testcase>
+  <testcase name="getQuantidadePromovidosInicialmente" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.003">
+    <error message="Uncompilable source code - Erroneous tree type: RecursosHumanos" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.getQuantidadePromovidosInicialmente(RecursosHumanosTest.java:181)
+</error>
+  </testcase>
+  <testcase name="reajustarSalarioComColaboradorNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.001">
+    <error message="Uncompilable source code - Erroneous tree type: RecursosHumanos" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComColaboradorNulo(RecursosHumanosTest.java:96)
+</error>
+  </testcase>
+  <testcase name="promoverColaboradorComCargoNulo" classname="school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest" time="0.002">
+    <error message="Uncompilable source code - Erroneous tree type: Colaborador" type="java.lang.RuntimeException">java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComCargoNulo(RecursosHumanosTest.java:41)
+</error>
+  </testcase>
 </testsuite>

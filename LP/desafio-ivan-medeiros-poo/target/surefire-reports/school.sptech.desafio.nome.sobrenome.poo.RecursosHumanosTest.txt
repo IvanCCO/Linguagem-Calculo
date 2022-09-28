@@ -1,4 +1,56 @@
 -------------------------------------------------------------------------------
 Test set: school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest
+Tests run: 13, Failures: 0, Errors: 13, Skipped: 0, Time elapsed: 0.068 s <<< FAILURE! - in school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest
+reajustarSalarioComValorValido  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComValorValido(RecursosHumanosTest.java:135)
+
+reajustarSalarioComValorZerado  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComValorZerado(RecursosHumanosTest.java:120)
+
+reajustarSalarioComValorNegativo  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComValorNegativo(RecursosHumanosTest.java:105)
+
+promoverColaboradorComValoresInvalidos  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComValoresInvalidos(RecursosHumanosTest.java:55)
+
+reajustarSalarioComPorcentagemNulo  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComPorcentagemNulo(RecursosHumanosTest.java:85)
+
+promoverColaboradorComValoresValidos  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComValoresValidos(RecursosHumanosTest.java:69)
+
+promoverColaboradorComColaboradorNulo  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComColaboradorNulo(RecursosHumanosTest.java:18)
+
+promoverColaboradorComSalarioNulo  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComSalarioNulo(RecursosHumanosTest.java:27)
+
+getQuantidadeReajusteNaoDeveSofrerAlteracoes  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.getQuantidadeReajusteNaoDeveSofrerAlteracoes(RecursosHumanosTest.java:150)
+
+getQuantidadeReajusteInicialmente  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.getQuantidadeReajusteInicialmente(RecursosHumanosTest.java:172)
+
+getQuantidadePromovidosInicialmente  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.getQuantidadePromovidosInicialmente(RecursosHumanosTest.java:181)
+
+reajustarSalarioComColaboradorNulo  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: RecursosHumanos
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.reajustarSalarioComColaboradorNulo(RecursosHumanosTest.java:96)
+
+promoverColaboradorComCargoNulo  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: Colaborador
+	at school.sptech.desafio.nome.sobrenome.poo.RecursosHumanosTest.promoverColaboradorComCargoNulo(RecursosHumanosTest.java:41)
+

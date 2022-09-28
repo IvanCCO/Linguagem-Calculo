@@ -1,4 +1,4 @@
-package school.sptech.desafio.nome.sobrenome.poo;
+package school.sptech.desafio.ivan.medeiros.poo;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RecursosHumanosTest {
 
-  /*
+ 
 
   // PROMOVER COLABORADOR
 
@@ -182,5 +182,5 @@ class RecursosHumanosTest {
 
     assertEquals(0, rh.getQuantidadeReajustes());
   }
-  */
+  
 }
