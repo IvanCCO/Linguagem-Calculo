@@ -3,26 +3,25 @@ import pymysql
 import psutil as p 
 import time 
 
-def insetzada():
-    cpu_percent = p.cpu_percent()
-    ram_percent = p.virtual_memory().percent
-    disk_percent = p.disk_usage("/").percent
 
-    conexao = pymysql.connect(db='BDpoint', user='aluno', passwd='sptech')
+conexao = pymysql.connect(db='BDpoint', user='aluno', passwd='sptech')
+cursor = conexao.cursor()
 
-    cursor = conexao.cursor()
-
-    cursor.execute(f"INSERT INTO DADOS VALUES (null, {cpu_percent}, {ram_percent}, {disk_percent})")
+def componente_cpu():
+    
+    cursor.execute(f"INSERT INTO Componente VALUES (null, 'CPU', 1)")
 
     conexao.commit()
 
     conexao.close()
 
 
-for i in range(0, 200):
-    time.sleep(2)
-    print(i)
-    insetzada()
+def registro():
 
+    cursor.execute(f"INSERT INTO Atributo VALUES (null, {p.cpu_percent()}, '%', now(), 1)")
+
+    conexao.commit()
+
+    conexao.close()
 
 

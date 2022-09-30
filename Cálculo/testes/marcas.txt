@@ -1,0 +1,101 @@
+Posição	Marca	Valor de Marca	Variação	Receita
+1	Apple	$241.2 B	17%	$260.2 B
+2	Google	$207.5 B	24%	$145.6 B
+3	Microsoft	$162.9 B	30%	$125.8 B
+4	Amazon	$135.4 B	40%	$260.5 B
+5	Facebook	$70.3 B	-21%	$49.7 B
+6	Coca-Cola	$64.4 B	9%	$25.2 B
+7	Disney	$61.3 B	18%	$38.7 B
+8	Samsung	$50.4 B	-5%	$209.5 B
+9	Louis Vuitton	$47.2 B	20%	$15 B
+10	McDonald’s	$46.1 B	5%	$100.2 B
+11	Toyota	$41.5 B	-7%	$187 B
+12	Intel	$39.5 B	2%	$72 B
+13	NIKE	$39.1 B	6%	$39.3 B
+14	AT&T	$37.3 B	-10%	$151.2 B
+15	Cisco	$36 B	4%	$50.6 B
+16	Oracle	$35.7 B	11%	$39.1 B
+17	Verizon	$32.3 B	2%	$131.9 B
+18	Visa	$31.8 B	18%	$23 B
+19	Walmart	$29.5 B	12%	$341 B
+20	GE	$29.5 B	-14%	$76.6 B
+21	Budweiser	$28.9 B	6%	$11.2 B
+22	SAP	$28.2 B	0%	$25.1 B
+23	Mercedes-Benz	$28.5 B	-14%	$121.7 B
+24	IBM	$28.2 B	-10%	$77.1 B
+25	Marlboro	$26.8 B	-6%	$25.1 B
+26	Netflix	$26.7 B	72%	$20.2 B
+27	BMW	$25.9 B	-13%	$93.4 B
+28	American Express	$25.1 B	-3%	$43.6 B
+29	Honda	$24.5 B	-5%	$126.2 B
+30	L’Oréal	$22.8 B	23%	$11.7 B
+31	Gucci	$22.6 B	22%	$10.8 B
+32	Hermès	$21.6 B	19%	$7.7 B
+33	Nescafe	$20.4 B	14%	$9.2 B
+34	Home Depot	$19.2 B	6%	$110.2 B
+35	Accenture	$19.1 B	15%	$43.2 B
+36	Pepsi	$18.2 B	-3%	$9.3 B
+37	Starbucks	$17.8 B	5%	$26.5 B
+38	Mastercard	$17.3 B	23%	$16.9 B
+39	Frito-Lay	$16.3 B	11%	$12.2 B
+40	IKEA	$15.8 B	3%	$46.2 B
+41	Zara	$14.7 B	9%	$21.9 B
+42	Gillette	$14.5 B	-13%	$6 B
+43	HSBC	$14.4 B	12%	$94.3 B
+44	Audi	$13.8 B	-3 %	$59.6 B
+45	J.P. Morgan	$13.7 B	11%	$52.6 B
+46	Deloitte	$13.5 B	9%	$46.2 B
+47	Sony	$13.3 B	18%	$63 B
+48	UPS	$13.3 B	5%	$74.1 B
+49	Bank Of America	$13.2 B	14%	$97.5 B
+50	Chase	$13.1 B	12%	$64.9 B
+51	Adidas	$12.9 B	15%	$24.5 B
+52	Chanel	$12.8 B	42%	$13.7 B
+53	Siemens	$12.7 B	-8%	$97.2 B
+54	Nestle	$12.3 B	-2%	$7.9 B
+55	CVS	$12.3 B	-10%	$187.2 B
+56	Cartier	$12.2 B	14%	$6.2 B
+57	Porshe	$12.1 B	10%	$31.9 B
+58	ESPN	$11.9 B	-9%	$11.4 B
+59	Citi	$11.8 B	4%	$103.5 B
+60	Wells Fargo	$11.8 B	-16%	$103.9 B
+61	Adobe	$11.5 B	10%	$9 B
+62	Pampers	$11.5 B	8%	$8.6 B
+63	Corona	$11.4 B	13%	$7.5 B
+64	T-Mobile	$11.4 B	20%	$45.3 B
+65	Ebay	$11.3 B	7%	$8.6 B
+66	Chevrolet	$11.3 B	5%	$77.5 B
+67	PayPal	$11.3 B	24%	$17.5 B
+68	Ford	$11.2 B	-14%	$148.1 B
+69	Red Bull	$11.1 B	12%	$6.8 B
+70	PwC	$11 B	$11 B	$42.4 B
+71	HP	$11 B	-12%	$58.8 B
+72	Colgate	$10.7 B	4%	$5.4 B
+73	Fox	$10.6 B	-13%	$12.4 B
+74	Lowe’s	$10.5 B	13%	$72.1 B
+75	Lancôme	$10.4 B	22%	$7.1 B
+76	H&M	$10.4 B	-10%	$24.6 B
+77	Lexus	$10.3 B	8%	$25.3 B
+78	Santander	$9.7 B	6%	$99.8 B
+79	Costco	$9.5 B	8%	$148.8 B
+80	Rolex	$9.5 B	5%	$5.2 B
+81	Hyundai	$9.5 B	17%	$96.1 B
+82	Danone	$9.3 B	1%	$11 B
+83	Heineken	$9.3 B	7%	7%
+84	Uniqlo	$9.2 B	6%	$17.2 B
+85	Goldman Sachs	$8.9 B	-1%	$56.4 B
+86	Hennessy	$8.9 B	–	$2.8 B
+87	Nintendo	$8.8 B	–	$8.8 B
+88	AXA	$8.8 B	–	$115.9 B
+89	Allianz	$8.8 B	7%	$130.4 B
+90	Dell	$8.7 B	6%	$79.5 B
+91	Caterpillar	$8.6 B	4%	$53.8 B
+92	LEGO	$8.6 B	6%	$5.8 B
+93	Huawei	$8.5 B	6%	$188.6 B
+94	John Deere	$8.4 B	5%	$39.4 B
+95	UBS	$8.3 B	–	$34.2 B
+96	KC	$8.3 B	-2%	$27.9 B
+97	Burger King	$8.2 B	–	$22.9 B
+98	EY	$8 B	–	$36.4 B
+99	FedEx	$7.9 B	-4%	$69.2 B
+100	Volkswagen	$7.9 B	–	$111.8 B
