@@ -1,0 +1,38 @@
+2022-10-05 10:59:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FILME" not found; SQL statement:
+SELECT * FROM filme; [42102-199]
+2022-10-05 11:00:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DATETIME" not found; SQL statement:
+SELECT DATETIME [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:176)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:158)
+	at org.h2.command.dml.Select.prepare(Select.java:1245)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.engine.Session.prepareCommand(Session.java:565)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:78)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:310)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:310)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:433)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:446)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:456)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:484)
+	at com.mycompany.conectandobanco.TesteDatabase.main(TesteDatabase.java:21)
+2022-10-05 11:20:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESC[*] SELECT * FROM FILME "; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+DESC SELECT * from filme [42001-199]
+2022-10-05 12:56:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TRUNCATE FILMES[*]; "; expected "TABLE"; SQL statement:
+TRUNCATE filmes; [42001-199]
+2022-10-05 12:57:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TRUNCATE *[*] FROM FILMES; "; expected "TABLE"; SQL statement:
+TRUNCATE * FROM filmes; [42001-199]
+2022-10-05 12:57:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FILMES" not found; SQL statement:
+TRUNCATE TABLE filmes; [42102-199]
