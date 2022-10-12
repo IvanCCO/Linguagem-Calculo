@@ -30,6 +30,7 @@ public class RecursosHumanos {
           System.out.println("Valor nulo");
           
       }else{
+          
       Double salario  = pessoa.getSalario();
       porcentagem /= 100;
       salario = salario + (salario * porcentagem);
