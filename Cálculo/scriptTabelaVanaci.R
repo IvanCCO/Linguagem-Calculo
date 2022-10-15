@@ -1,5 +1,5 @@
 library(stringr)
-teste <- ArquivoTratadoCSV$SubjectData
+teste <- ArquivoTratadoCSV$V9
 arquivoTotal <- ArquivoTratadoCSV
 
 
