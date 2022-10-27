@@ -62,14 +62,9 @@ for (l in filtroEmp){
 
 
 
-
-filtroTana = function(valor){
-  
-  valor = toString(valor)
  
-  tana <- "tana.job11.van."
+  tana <- "tana.job11.van.1"
   
-  tana <- paste(tana,valor, sep = "")
   
   for (k in teste){
     
@@ -109,8 +104,13 @@ filtroTana = function(valor){
   visualizador$produto[visualizador$produto == 8] <- "Mon Bijou Azul - Diluido"
   
   View(visualizador)
+  
 
-}
+  
+  write_xlsx(visualizador, "C:\\Users\\ivanm\\OneDrive\\Documentos\\arquivosVanaci\\tana3NovoX.xlsx")
+  
+
+
 
 
 numInicial <- readline(prompt = "1 - Total ; 2 - Tana?")
@@ -123,8 +123,9 @@ if(num == 1){
   valor <- as.numeric(valor)
 }
 
-write_xlsx(visualizador, "C:\\Users\\ivanm\\OneDrive\\Documentos\\arquivosVanaci\\tabelaTana1.xlsx")
 
+rm(visualizador)
+View(visualizador)
 
 
 
