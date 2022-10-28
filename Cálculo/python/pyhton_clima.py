@@ -4,12 +4,10 @@ import pymysql
 
 
 
-data = []
+array = ["_"] * 10
 
-array = ["Ola", "Hello"]
+print(*array, sep=" ")
 
-data.append(array)
-print(len(data[0]))
+array[4] = "A"
 
-for i in data[0]:
-    print(i)
+print(*array, sep=" ")
