@@ -7,7 +7,8 @@ PopBandeirantes <- data.frame(Graducao = PopDados$Education,
 
 PopBandeirantes$Graducao[PopBandeirantes$Zona == ""] = NA
 
-PopBandeirantes$Dependentes[PopBandeirantes$Dependentes == "3+"] = sample(3:5, 1)
+PopBandeirantes$Dependentes[PopBandeirantes$Dependentes == "3+"] = sort(sample(3:5,1))
+PopBandeirantes$Dependentes[PopBandeirantes$Dependentes == "0"] = sort(sample(0:1,1))
 PopBandeirantes$Dependentes = as.numeric(PopBandeirantes$Dependentes)
 
 PopBandeirantes = na.omit(PopBandeirantes)
@@ -34,7 +35,9 @@ amostra4 = data.frame(Graducao = sample(PopBandeirantes$Graducao, n),
 )
 
 
-ggplot(amostra4, aes(x = Graducao, y = Zona, fill = Dependentes)) + 
+ggplot(amostra2, aes(x = Zona, y = Dependentes, fill = Graducao)) + 
         geom_bar(stat = "identity", position = "dodge") +
           labs(title = "Relação de Dependentes por espaço Geográfico e Graduação",
                subtitle = "Como a quantidade de Dependentes difere por região?")
+D
+

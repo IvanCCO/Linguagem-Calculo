@@ -3,6 +3,25 @@ import os
 import time
 import csv
 
+class TextFormatter:
+    """
+    Contains numerous ANSI escape sequences used to apply
+    formatting and styling to text.
+    """
+    # Blue colouring
+    BLUE_COL = '\033[94m'
+    # Red Colouring
+    RED_COL = '\033[91m'
+    # Green colouring
+    GREEN_COL = '\033[92m'
+    
+    # Reset formatting and styling
+    RESET = '\033[0m'
+    # Underlined text
+    UNDERLINE = '\033[4m'
+    # Yellow colouring
+    YELLOW_COL = '\033[93m'
+
 
 arr = []
 with open("..\Documentos\palavras.csv", 'r') as file:
@@ -32,7 +51,7 @@ def limpar_terminal():
 
 
 def is_letra_repetida(letra):
-    for k in arr_palavra_linha:
+    for k in arr_respota:
         if(k.lower()==letra.lower()):
             print("Letra repetida")
             return True
@@ -78,7 +97,7 @@ while True:
         n = int(input("Quantas vezes deseja jogar?\n"))
 
         for i in range(0,n):
-
+            # Default 0
             count = 0
             limiter()
             print("Escolhendo um nova Palavra")
@@ -98,9 +117,8 @@ while True:
 
             while count < 6:
                 limpar_terminal()
-                print(f"Vida: {6-count}\n")
+                print(f"Vida: {6-count}   Partida: {i+1}\n")
                 print(*arr_palavra_linha, sep=" ")
-                print("\n")
                 limiter()
                 print("Letras já utilizadas: ")
                 print(*arr_respota, sep="-")
@@ -132,7 +150,18 @@ while True:
 
                 if is_palavra_terminada():
                     limpar_terminal()
-                    print("Parabéns")
+                    print(""" 
+                            
+                                _ _      
+                                | |      
+  ___ ___  _ __   __ _ _ __ __ _| |_ ___ 
+ / __/ _ \| '_ \ / _` | '__/ _` | __/ __|
+| (_| (_) | | | | (_| | | | (_| | |_\__ 
+ \___\___/|_| |_|\__, |_|  \__,_|\__|___/
+                  __/ |                  
+                 |___/          
+
+        """)
                     print(*arr_palavra_certa)
                     time.sleep(1)
                     total_acertos+=1
