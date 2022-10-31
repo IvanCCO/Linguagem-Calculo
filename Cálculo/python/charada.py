@@ -1,7 +1,8 @@
-from random import randint
+from random import randint, random
 import os
 import time
 import csv
+import random
 
 class TextFormatter:
     """
@@ -34,11 +35,6 @@ palavras = []
 for i in arr:
     x = i.replace('"','')
     palavras.append(x)
-
-
-def sortear():
-    return randint(0,len(palavras)-1)
-
         
 def is_letra_valida(palavra, letra):
     for i in palavra.lower():
@@ -102,7 +98,7 @@ while True:
             limiter()
             print("Escolhendo um nova Palavra")
             time.sleep(2)
-            palavraEscondida = palavras[sortear()]
+            palavraEscondida = random.choice(palavras)
 
             arr_palavra_certa = list(palavraEscondida)
 
@@ -124,19 +120,13 @@ while True:
                 print(*arr_respota, sep="-")
                 limiter()
                 letra = input("Digite uma letra:\n")
-
                 if(not is_letra_valida(palavraEscondida, letra) or is_letra_repetida(letra)):
-
                     count += 1
-                    
-
                 else:
                         acerto(letra)
                         count_acerto -= 1
-
-
+            
                 arr_respota.append(letra)
-
                 if count == 6:
                     limpar_terminal()
                     print(f"Você não conseguiu descobrir a palavra\nA palavra era:")
@@ -168,7 +158,8 @@ while True:
                     break
         break
             
-    except:
+    except Exception as e:
+        print(e)
         print("Valor errado, digite novamente")
 
 
