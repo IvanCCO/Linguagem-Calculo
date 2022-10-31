@@ -25,7 +25,7 @@ class TextFormatter:
 
 
 arr = []
-with open("..\Documentos\palavras.csv", 'r') as file:
+with open("../Documentos/palavras.csv", 'r') as file:
   csvreader = csv.reader(file)
   for row in file:
     arr.append(row)
