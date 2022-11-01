@@ -10,5 +10,5 @@
 /LP/projeto-heranca-lp/target/
 /LP/projeto1-heranca-incompleto/target/
 /Lab/node_modules/
-/Lab/package-lock.json/
-/Lab/package.json/
+/Lab/package-lock.json
+/Lab/package.json
