@@ -3,7 +3,6 @@ import os
 import time
 import csv
 import random
-import pygame
 from sys import exit
 
 palavras = []

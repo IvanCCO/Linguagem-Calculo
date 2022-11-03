@@ -75,8 +75,6 @@ def draw_bg():
     scaled_bg = pygame.transform.scale(bg_image, (SCREEN_WIDTH, SCREEN_HEIGTH))
     screen.blit(scaled_bg, (0,0))
 
-kybrd104 = [(1114.28,350),(1164.28,350),(1164.28,400),(1114.28,400),(1114.28,350)]
-
 run = True
 while run:
 
