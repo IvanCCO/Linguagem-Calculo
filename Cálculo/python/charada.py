@@ -3,38 +3,22 @@ import os
 import time
 import csv
 import random
-
-class TextFormatter:
-    """
-    Contains numerous ANSI escape sequences used to apply
-    formatting and styling to text.
-    """
-    # Blue colouring
-    BLUE_COL = '\033[94m'
-    # Red Colouring
-    RED_COL = '\033[91m'
-    # Green colouring
-    GREEN_COL = '\033[92m'
-    
-    # Reset formatting and styling
-    RESET = '\033[0m'
-    # Underlined text
-    UNDERLINE = '\033[4m'
-    # Yellow colouring
-    YELLOW_COL = '\033[93m'
-
-
-arr = []
-with open("../Documentos/palavras.csv", 'r') as file:
-  csvreader = csv.reader(file)
-  for row in file:
-    arr.append(row)
+import pygame
+from sys import exit
 
 palavras = []
 
-for i in arr:
-    x = i.replace('"','')
-    palavras.append(x)
+def palavras_array():
+    arr = []
+    with open("../Documentos/palavras.csv", 'r') as file:
+        csvreader = csv.reader(file)
+        for row in file:
+            arr.append(row)
+    for i in arr:
+        x = i.replace('"','')
+        palavras.append(x)
+
+
         
 def is_letra_valida(palavra, letra):
     for i in palavra.lower():
