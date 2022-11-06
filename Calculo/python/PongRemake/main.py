@@ -40,8 +40,12 @@ while run:
 
     bola.draw(screen)
     bola.move()
-    bola.hold_ball_wall(SCREEN_HEIGTH,SCREEN_WIDTH)
-    bola.hold_ball_bar_left(player_left)
+    bola.hold_ball_wall(SCREEN_HEIGTH, SCREEN_WIDTH)
+    bola.touch_player_body(player_left)
+    bola.touch_player_body(player_right)
+    bola.touch_player_head(player_left)
+    bola.touch_player_head(player_right)
+
     # print(f"Posicao x da bola: {bola.x}\nPosicao y: {bola.y}\n Velocidade x Bola{bola.x_vel}\nVelocidade y {bola.y_vel}")
 
 

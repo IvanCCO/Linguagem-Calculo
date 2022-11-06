@@ -19,7 +19,6 @@ class Bar:
         if key[pygame.K_w]:
             dy = -SPEED
         if key[pygame.K_s]:
-            print(self.rect.y)
             dy = +SPEED
 
         #Definindo y
@@ -42,7 +41,6 @@ class Bar:
         if key[pygame.K_UP]:
             dy = -SPEED
         if key[pygame.K_DOWN]:
-            print(self.rect.y)
             dy = +SPEED
 
         #Definindo y
@@ -54,6 +52,8 @@ class Bar:
             self.rect.y = max_h
 
 
+# Eixo Y pra cima é 0 pra baixo é a altura máxima
+# Eixo X pra esquerda 0 pra direita largura máxima
 class Bola:
 
     def __init__(self, x,y, raio):
@@ -75,43 +75,48 @@ class Bola:
         # Sair do eixo y
         if self.y + self.raio >= max_heigth:
             self.y_vel *= -1
+            # print(f"Y = {self.y}")
         elif self.y - self.raio <= 0:
+            # print(f"Y = {self.y}")
             self.y_vel *= -1
-        # Sair do eixo x
+
         if self.x + self.raio >= max_width:
             self.x_vel *= -1
+            # print(f"X = {self.x}")
         elif self.x - self.raio <= 0:
             self.x_vel *= -1
-
-    # Método para bater nas barras e voltar
-    def hold_ball_bar_left(self, player_left):
-
-        # Esse if serve para verificar se a bolinha está entre as barras no sentido de altura
-        if self.y >= player_left.rect.y and self.y <= (player_left.rect.y + player_left.rect.height):
-            # Esse é no de Largura
-            # Primeiro pega a bolinha inteira vindo da direita
-            
-            if (self.x - self.raio) == player_left.rect.x + player_left.rect.width:
-                print("Entrouu")
-                self.x_vel *= -1
-                meio_y = player_left.rect.y + player_left.rect.height / 1
-                diferenca_y = meio_y - self.y
-                diminuir_velocidade = (player_left.rect.height/2) / 1
-                y_vel = diferenca_y // diminuir_velocidade
-                self.y_vel = -1 * y_vel
-
-            elif (self.x + self.raio) == player_left.rect.x:
-                print("Entrou")
-                self.x_vel *= -1
-                meio_y = player_left.rect.y + player_left.rect.height / 1
-                diferenca_y = meio_y - self.y
-                diminuir_velocidade = (player_left.rect.height/2) / 1
-                y_vel = diferenca_y // diminuir_velocidade
-                self.y_vel = -1 * y_vel
-
-        return 0
-
-    def hold_ball_bar_rigth(self, player_right):
-
-        return 0
+            # print(f"X = {self.x}")
     
+    # Ok
+    def touch_player_body(self, player):
+
+        ball_comming_up = self.y + self.raio
+        ball_comming_down = self.y - self.raio
+        ball_comming = self.x + self.raio
+        ball_comming_right = self.x - self.raio
+
+        if ball_comming_up >= player.rect.y and ball_comming_up <= player.rect.y + player.rect.height or ball_comming_down >= player.rect.y and ball_comming_down <= player.rect.y + player.rect.height:
+            if ball_comming == player.rect.x:
+                self.y_vel *= -1
+                self.x_vel *= -1
+            elif ball_comming_right == player.rect.x + player.rect.width:
+                self.y_vel *= -1
+                self.x_vel *= -1
+
+    def touch_player_head(self, player):
+
+        ball_inside_x_middle = self.x >= player.rect.x and self.x <= (player.rect.x + player.rect.width)
+        ball_inside_x_left = self.x + self.raio >= player.rect.x and self.x + self.raio <= (player.rect.x + player.rect.width)
+        ball_inside_x_rigth = self.x - self.raio >= player.rect.x and self.x - self.raio <= (player.rect.x + player.rect.width)
+
+        if(ball_inside_x_middle or ball_inside_x_left or ball_inside_x_rigth):
+            if (self.y + self.raio) == player.rect.y or (self.y - self.raio) == (player.rect.y + player.rect.height):
+                self.y_vel *= -1
+                self.x_vel *= -1
+                print("Entrou")
+    
+                
+        
+
+
+
