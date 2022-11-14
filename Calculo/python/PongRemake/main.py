@@ -1,14 +1,16 @@
 from re import X
-from bar import Bar
-from bar import Bola
-import pygame
-from sys import exit 
+from sys import exit
+
 import bar
+import pygame
+from bar import Bar, Bola
 
 pygame.init()
 
 SCREEN_WIDTH = 1000
 SCREEN_HEIGTH = 600
+clock = pygame.time.Clock()
+FPS = 60
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGTH))
 pygame.display.set_caption("Brawler")
@@ -29,6 +31,8 @@ bola = Bola(SCREEN_WIDTH // 2, SCREEN_HEIGTH // 2, 9)
 run = True
 
 while run:
+
+    clock.tick(FPS)
 
     draw_bg()
     

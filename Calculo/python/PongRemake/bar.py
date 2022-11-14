@@ -11,7 +11,7 @@ class Bar:
     def move_left(self, max_h):
 
         max_h -= self.rect.height
-        SPEED = 1
+        SPEED = 2
         dy = 0
 
         key = pygame.key.get_pressed()
@@ -33,7 +33,7 @@ class Bar:
     def move_right(self, max_h):
 
         max_h -= self.rect.height
-        SPEED = 1
+        SPEED = 2
         dy = 0
 
         key = pygame.key.get_pressed()
