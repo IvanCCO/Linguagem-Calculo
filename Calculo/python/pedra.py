@@ -30,7 +30,7 @@ def resultado(maquina, user):
         print("User ganhou")
 
 
-    
+
 while True:
     try:
         n = int(input("São quantas neguinhas?\n"))
@@ -43,7 +43,7 @@ while True:
             ataque(ataque_maquina)
             resultado(ataque_maquina, ataque_user)
 
-        break    
+        break
 
 
     except:

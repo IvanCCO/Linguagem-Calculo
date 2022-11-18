@@ -33,13 +33,6 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-let g:sonokai_style = 'andromeda'
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 0
-let g:sonokai_diagnostic_line_highlight = 1
-let g:sonokai_current_word = 'bold'
-"colorscheme sonokai"
-
 if (has("nvim")) "Transparent background. Only for nvim
     highlight Normal guibg=NONE ctermbg=NONE
     highlight EndOfBuffer guibg=NONE ctermbg=NONE
@@ -62,9 +55,16 @@ Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'zchee/deoplete-jedi'
+Plug 'neomake/neomake'
+Plug 'tanvirtin/monokai.nvim'
 
 call plug#end()
 
+
+let g:neomake_python_enabled_makers = ['pylint']
+call neomake#configure#automake('nrwi', 500)
 
 " AirLine """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
@@ -77,7 +77,6 @@ let g:ale_fixers = {
 \   '*': ['trim_whitespace'],
 \}
 let g:ale_fix_on_save = 1
-let g:airline_theme = 'sonokai'
 
 nmap <C-a> :NERDTreeToggle<CR>
 map <C-h> <C-w>h

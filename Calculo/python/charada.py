@@ -18,7 +18,7 @@ def palavras_array():
         palavras.append(x)
 
 
-        
+
 def is_letra_valida(palavra, letra):
     for i in palavra.lower():
         if(i == letra.lower()):
@@ -42,11 +42,11 @@ def acerto(letra):
     for i in range(0,len(arr_palavra_certa)):
         if arr_palavra_certa[i].lower() == letra.lower():
             arr_palavra_linha[i] = arr_palavra_certa[i]
-           
+
 
 
 def is_palavra_terminada():
-    
+
     for i in arr_palavra_linha:
         if(i == "_"):
             return False
@@ -55,7 +55,7 @@ def is_palavra_terminada():
 def limiter():
     print("="*60)
 
-print("""   
+print("""
  _   _      _ _       _ _
 | | | | ___| | | ___ | | |
 | |_| |/ _ \ | |/ _ \| | |
@@ -108,7 +108,7 @@ while True:
                 else:
                         acerto(letra)
                         count_acerto -= 1
-            
+
                 arr_respota.append(letra)
                 if count == 6:
                     limpar_terminal()
@@ -123,16 +123,16 @@ while True:
 
                 if is_palavra_terminada():
                     limpar_terminal()
-                    print(""" 
-                            
-                                _ _      
-                                | |      
-  ___ ___  _ __   __ _ _ __ __ _| |_ ___ 
+                    print("""
+
+                                _ _
+                                | |
+  ___ ___  _ __   __ _ _ __ __ _| |_ ___
  / __/ _ \| '_ \ / _` | '__/ _` | __/ __|
-| (_| (_) | | | | (_| | | | (_| | |_\__ 
+| (_| (_) | | | | (_| | | | (_| | |_\__
  \___\___/|_| |_|\__, |_|  \__,_|\__|___/
-                  __/ |                  
-                 |___/          
+                  __/ |
+                 |___/
 
         """)
                     print(*arr_palavra_certa)
@@ -140,7 +140,7 @@ while True:
                     total_acertos+=1
                     break
         break
-            
+
     except Exception as e:
         print(e)
         print("Valor errado, digite novamente")

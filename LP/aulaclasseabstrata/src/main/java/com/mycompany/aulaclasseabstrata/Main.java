@@ -14,28 +14,28 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        
-     
+
+
         AlunoaAds alunosAds = new AlunoaAds (9.1, 8.8,  "92912" , "Ivan Cheiro");
-        
+
         AlunoCco alunoCco1 = new AlunoCco(8.9, 8.7, "0221021", "Julio freire");
-        
-        
+
         AlunoaAds alunoTeste = new AlunoaAds(9.7, 8.2, "02921", "Viviane teixiera");
-        
-        
-        
-        
+
+
+        System.out.println("Okk, testando aqui");
+
         ArrayList<Aluno> alunos = new ArrayList();
-        
-       
+
+
         alunos.add(alunoTeste);
         alunos.add(alunoCco1);
         alunos.add(alunosAds);
-        
+
         for (Aluno aluno : alunos) {
             System.out.println(aluno.toString());
         }
-        
+
+
     }
 }
