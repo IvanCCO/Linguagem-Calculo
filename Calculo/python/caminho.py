@@ -11,6 +11,9 @@ def conversor(valor):
     return float(valor[0:4].replace(",", '.'))
 
 
+
+
+
 with PoolManager() as pool:
 
    
